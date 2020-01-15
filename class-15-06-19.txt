@@ -1,0 +1,262 @@
+LOOP
+
+loop is used in every web sight. There are containers of diffent different varites in flipkart,zamaoto every where.
+syntex:
+
+>>> i=1
+>>> while i!=11:
+	print(i)
+	i+=1
+
+program for number multiplication table
+
+number=int(input("Enter a number"))
+
+i=1
+
+while i!=11:
+    print(number,"*",i,"=",number*i)
+    i+=1
+
+syntex:
+for i in range(1,11):
+	print(i)
+for i in range(15,25):
+	print(i)
+for i in range(1,25,3):
+	print(i)
+
+...................................................................
+
+import random
+
+jackpot=random.randint(1,100)
+guess=int(input("Guess kar:"))
+
+while guess!=jackpot:
+    if guess>jackpot:
+        print("Guess Lower")
+    else:
+        print("Guess Higher")
+        
+    guess=int(input("Dobara Guess kar:"))
+
+else:
+    print("sahi Guess")
+
+.................................................................
+import random
+
+jackpot=random.randint(1,100)
+guess=int(input("Guess kar:"))
+
+counter=1
+
+while guess!=jackpot:
+    if guess>jackpot:
+        print("Guess Lower")
+    else:
+        print("Guess Higher")
+        
+    guess=int(input("Dobara Guess kar:"))
+    counter+=1
+     
+else:
+    print("sahi Guess",counter,"baar me shi guess")
+.................................................................
+BREAK STATEMENT
+
+for i in range(1,11):
+	if i==5:
+		break
+	else:
+		print(i)
+
+
+for i in range(1,11):
+	if i==5:
+		continue
+	else:
+		print(i)  -------esc 5
+
+for i in range(1,11):
+	pass            ---------logic nhi pta toh pass krrdo
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+STRING
+##create a string
+
+empty string         >>> city=""
+			>>> city
+				''
+>>> city=str("hello")
+
+##how to access a string
+
+>>> city[0]
+'h'
+>>> city[7]
+Traceback (most recent call last):
+  File "<pyshell#51>", line 1, in <module>
+    city[7]
+IndexError: string index out of range
+>>> city[2
+	 ]
+'l'
+>>> city[-4]
+'e'
+
+>>> city[3:5]
+'lo'
+
+@@@@in python strings a immutable.... nhi change krr sakte....
+
+>>> city="panskura"
+>>> city[0]="X"
+Traceback (most recent call last):
+  File "<pyshell#67>", line 1, in <module>
+    city[0]="X"
+TypeError: 'str' object does not support item assignment
+>>> del city
+
+string operation.................
+
+>>sortd(city)  ....desending order
+
+>>>sorted(city.reverse=True)
+
+>>>max(city)
+
+>>>min(city)
+
+>>>city.upper()
+
+>>>city.lower()
+
+>>>mystr="Today ia a good day"
+>>>mystr.split()
+>>>mystr.split('a')
+>>>""join(mylist)
+>>"jai sree ram"join(mylist)
+
+
+python me sab kuch object..... iss liye aap ak object batate ho . se|  interger k liye alag.... string k liye 
+alag object k alag function banayega
+
+replace function.....
+
+format function/.....
+
+find.... index position.....
+
+...........................................................................................................
+
+>>> l1=[1,2,3.4]
+>>> l1*3
+[1, 2, 3.4, 1, 2, 3.4, 1, 2, 3.4]
+>>> l1=[1,2,3,4]
+>>> l1*3
+[1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4]
+>>> l2=[3,"hello",3.5,True]
+>>> l1+l2
+[1, 2, 3, 4, 3, 'hello', 3.5, True]
+>>> l3=[1,2,3,[4,5]]
+>>> 4 in l3
+False
+>>> [4,5] in l3
+True
+>>> 
+
+
+
+>>> len(l3)
+4
+>>> max(l1)
+4
+>>> max(l3)
+Traceback (most recent call last):
+  File "<pyshell#88>", line 1, in <module>
+    max(l3)
+TypeError: '>' not supported between instances of 'list' and 'int'
+>>> 
+
+
+>>> l4=["Hello","World","HIT","Kolkata"]
+>>> max(l4)
+'World'
+>>> min(l4)
+'HIT' 
+
+
+>>> sum(l1)
+10
+>>> sorted(l1)
+[1, 2, 3, 4]
+>>> sorted(l1,reverse=True)
+[4, 3, 2, 1]
+>>> 
+
+
+
+>>> l5=[3,5,1,2,3,7]
+>>> l5.sort()
+>>> l5
+[1, 2, 3, 3, 5, 7]
+
+.........................................................................
+
+TUPLES
+t1=()  - empty
+>>> T2=(1,"Hello",4.5)
+>>> type(T2)
+<class 'tuple'>
+>>> T6=tuple([1,2,3,4,5])
+>>> T6
+(1, 2, 3, 4, 5)
+>>> type(T6)
+<class 'tuple'>
+>>> 
+accessing tuples,,,,,,
+
+same as list
+..................................
+
+variable n memory
+
+>>> a=4
+>>> id(a)
+140729143151184
+>>> hex(id(a))
+'0x7ffe0e964a50'
+
+aliasing......................
+
+>>> a=4
+>>> b=a
+>>> id(a)
+140729143151184
+>>> id(b)
+140729143151184
+>>> 
+
+=same data memory.......
+
+>>> del a
+>>> b
+4
+>>> id(b)
+140729143151184
+>>> 
+.........................kinte varible hai.. sabko point krta hai..........
+>>> import sys
+>>> a="India VS Pakistan"
+>>> b=a
+>>> id(a)
+2484823253616
+>>> id(b)
+2484823253616
+>>> sys.getrefcount(a)
+3
+>>> 
