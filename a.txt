@@ -1,0 +1,115 @@
+01Hr 33Min 27Sec
+Editor - {C}
+
+1
+//This is The Coding Area
+2
+#include<stdio.h>
+3
+int main()
+4
+{
+5
+    long int n,f5=0,t2=0,o1=0;
+6
+    scanf("%ld",&m);
+7
+    if(m>=1)
+8
+    {
+9
+     m=m-1;
+10
+     ++o1;
+11
+     if(m>=2)
+12
+     {
+13
+        m=m-2;
+14
+        ++t2;
+15
+        if(m>=2)
+16
+        {
+17
+            m=m-2;
+18
+            ++t2;
+19
+            if(m>=5)
+20
+            {
+21
+                f5=m/5;
+22
+                m=m%5;
+23
+                if(m>=2)
+24
+                {
+25
+                  t2=(m/2)+2;
+26
+                  m=m%2;
+27
+                  o1=m+1;
+28
+                }
+29
+                else if(m>=1)
+30
+                {
+31
+                  o1=m+1;
+32
+                }
+33
+            }
+34
+            else if(m>=2)
+35
+                {
+36
+                  t2=(m/2)+2;
+37
+                  m=m%2;
+38
+                  o1=m+1;
+39
+                }
+40
+        }
+41
+        else if(m>=0)
+42
+        {
+43
+            o1=o1+n;
+44
+        }
+45
+      }
+46
+      else if(m>=0)
+47
+      {
+48
+          o1+=m;
+49
+      }
+50
+    }
+51
+    printf("%ld %ld %ld %ld",(o1+t2+f5),f5,t2,o1);
+52
+    return 0;
+53
+}
+programC
+Program Name .  
+c
+Extension
+Save (Local)  Compile & Run
+ Took help from online sources (attributions)
